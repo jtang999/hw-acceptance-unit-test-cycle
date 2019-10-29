@@ -1,0 +1,18 @@
+-# in app/views/movies/find.html.haml
+
+%h2 Movies by #{@director_name}
+
+%table#movies.table.table-striped.col-md-12
+  %thead
+    %tr
+      %th Movie Title
+      %th Rating
+      %th Release Date
+      %th More Info
+  %tbody
+    - @similar_movies.each do |movie|
+      %tr
+        %td= movie.title
+        %td= movie.rating
+        %td= movie.release_date
+        %td= link_to "More about #{movie.title}", movie_path(movie)

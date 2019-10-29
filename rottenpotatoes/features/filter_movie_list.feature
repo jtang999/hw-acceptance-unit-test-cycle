@@ -1,5 +1,5 @@
 Feature: display list of movies filtered by MPAA rating
- 
+
   As a concerned parent
   So that I can quickly browse movies appropriate for my family
   I want to see movies matching only certain MPAA ratings
@@ -32,7 +32,7 @@ Scenario: restrict to movies with 'PG' or 'R' ratings
   And I press "ratings_submit"
   Then I should see "The Incredibles"
   And I should see "The Terminator"
-  And I should not see "Alladin"
+  And I should not see "Aladdin"
   And I should not see "The Help"
 
 Scenario: all ratings selected

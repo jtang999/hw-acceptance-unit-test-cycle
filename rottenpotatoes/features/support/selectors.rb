@@ -31,6 +31,8 @@ module HtmlSelectorsHelpers
     # This allows you to provide a quoted selector as the scope
     # for "within" steps as was previously the default for the
     # web steps:
+    # when "#movies"
+    #   "#movies"
     when /^"(.+)"$/
       $1
 
